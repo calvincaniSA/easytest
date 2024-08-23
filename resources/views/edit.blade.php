@@ -1,5 +1,4 @@
 @extends('base')
-
 @section('content')
 <div class="page" id="blogEditPage">
     <div class="blogWrap">
@@ -18,10 +17,8 @@
             </div>
             <input type="submit" value="Update" id="updateBtn">
         </form>
-
         <a href="{{ route('blogs.index') }}" class="btn btn-secondary">Back to List</a>
         </div>
-
     </div>
 </div>
 @endsection

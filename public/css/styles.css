@@ -33,6 +33,16 @@ a {
     width: 50%;
     margin: 40px auto;
 }
+.blogItemLeft {
+    width: 60%;
+    padding-right: 10px;
+}
+.blogItemRight {
+    width: 40%;
+}
+.btnTitle h4 {
+    margin-bottom: 7px;
+}
 .btnDel {
     background: #fb3111;
     color: #fff;
@@ -185,7 +195,35 @@ li {
 /* MEDIA QUERIES */
 @media screen and (min-width: 300px) and (max-width: 640px) {
     #topMenu a {
-        min-width: 80px;
-        margin: 0 2px;
+        min-width: 145px;
+        margin: 2px 0;
+        padding: 0;
+    }
+    #loginForm,
+    #registrationForm,
+    .createMessage {
+        width: 90%;
+    }
+    #topMenu {
+        flex-flow: column;
+        align-items: center;
+    }
+    .blogList {
+        width: 98%;
+    }
+    .blogItem .btn {
+        min-width: 74px;
+        padding: 4px 8px;
+        margin-bottom: 5px;
+    }
+    .blockContent {
+        margin: 50px auto;
+        width: 90%;
+    }
+    .blogItemLeft {
+        width: 75%;
+    }
+    .blogItemRight {
+        width: 25%;
     }
 }

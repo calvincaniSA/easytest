@@ -35,7 +35,6 @@ class RegisterController extends Controller
         ]);
 
         event(new Registered($user));
-
         return redirect()->route('login')->with('message', '<div class="siteAlert">Account created! You can now login.</div>');
     }
 }

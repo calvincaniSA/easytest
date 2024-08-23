@@ -4,7 +4,6 @@
 <div class="page" id="blogsPage">
     <div class="blogsWrap">
         <h1 class="center">Blog List</h1>
-
         <div class="blogList">
             @if($blogs->isEmpty())
             <p class="center">No blogs available.</p>

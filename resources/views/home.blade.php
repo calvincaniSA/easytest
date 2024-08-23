@@ -7,7 +7,6 @@
         <div class="homeContent">
             <p class="center">This is an application for a position</p>
         </div>
-
         @if(Auth::check()) 
         <div class="createMessage">
             <h3 class="center createTitle">Create Blog</h3>

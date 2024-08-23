@@ -1,5 +1,4 @@
 @extends('base')
-
 @section('content')
 <div class="page" id="blogShowPage">
     <div class="blogWrap">
