@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.absolute {
+    position: absolute;
+}
+.aboutContent,
+.homeContent {
+    padding: 20px;
+}
+.blogItem {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.blogItem .btn {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    min-width: 80px;
+    padding: 7px 12px;
+    text-align: center;
+}
+.blogList {
+    width: 50%;
+    margin: 40px auto;
+}
+.btnDel {
+    background: #fb3111;
+    color: #fff;
+}
+.btnEdit {
+    background: #539048;
+    color: #fff;
+}
+.btnView {
+    background: #004488;
+    color: #fff;
+}
+.blockContent {
+    margin: 50px auto;
+    width: 50%;
+}
+.blockContent p {
+    margin-bottom: 20px;
+}
+body {
+    font-family: arial;
+}
+.center {
+    text-align: center;
+}
+.cookiesNotice {
+    background: #ffe;
+    box-shadow: 0 0 10px 0 #444;
+    left: 0;
+    padding: 10px;
+    position: fixed;
+    top: -50%;
+    width: 100%;
+}
+fieldset {
+    border: none;
+}
+h1 {
+    color: #cc0033;
+    font-size: 22px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+input {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    display: block;
+    height: 36px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+}
+#content {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    min-height: 150px;
+    max-height: 300px;
+    padding: 10px;
+    resize: vertical;
+    width: 100%;
+}
+#loginBtn,
+#createBtn,
+#registerBtn,
+#updateBtn {
+    background: #cc0033;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    margin: 15px auto;
+    width: 160px;
+}
+.btnLogout {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+#loginForm,
+#registrationForm,
+.createMessage {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 10px;
+    width: 25%;
+}
+#messageContainer {
+    font-size: 18px;
+    color: #00b422;
+}
+#message {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    min-height: 170px;
+    max-height: 400px;
+    padding: 10px;
+    resize: vertical;
+    width: 100%;
+}
+#topMenu {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px auto 30px;
+    width: 40%;
+}
+#topMenu a {
+    background: #eee;
+    border-radius: 5px;
+    color: #333;
+    display: block;
+    min-width: 120px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+#topMenu a:hover,
+#topMenu a.active {
+    background-color: #333;
+    color: #fff;
+}
+li {
+    line-height: 2;
+    list-style: none;
+}
+.loggedIn {
+    background: #c03;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    left: 1%;
+    padding: 8px;
+    top: 9px;
+}
+.msgBody,
+.msgTitle {
+    color: #cc0033;
+    margin-bottom: 10px;
+}
+.msgTitle,
+.createTitle,
+.blogTitle,
+.contentTitle {
+    margin-bottom: 10px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 300px) and (max-width: 640px) {
+    #topMenu a {
+        min-width: 80px;
+        margin: 0 2px;
+    }
+}
