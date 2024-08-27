@@ -15,6 +15,7 @@
                     <p>{{ $blog->content }}</p>
                 </div>
                 <div class="blogItemRight">
+                @if(Auth::check()) 
                     <a href="{{ route('blogs.show', $blog->id) }}" class="btn btnView">View</a>
                     <a href="{{ route('blogs.edit', $blog->id) }}" class="btn btnEdit">Edit</a>
                     <form action="{{ route('blogs.destroy', $blog->id) }}" method="POST" style="display:inline;">
@@ -22,6 +23,7 @@
                         @method('DELETE')
                         <button type="submit" class="btn btnDel" onclick="return confirm('Are you sure you want to delete this blog?');">Delete</button>
                     </form>
+                @endif
                 </div>
             </div>
             @endforeach
